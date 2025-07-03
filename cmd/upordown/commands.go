@@ -1,6 +1,6 @@
 package main
 
-func handleTrack(args []string) {
+func HandleTrack(args []string) {
 	if len(args) < 1 {
 		println("Usage: upordown track <url>")
 		return
