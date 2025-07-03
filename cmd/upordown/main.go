@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"os"
-	"upordown/internal/storage"
+	"upordown/internal/database"
 
 	"github.com/joho/godotenv"
 	_ "github.com/mattn/go-sqlite3"
@@ -22,7 +22,7 @@ func main() {
 
 	cmd := os.Args[1]
 
-	storage.Init()
+	database.Init()
 
 	switch cmd {
 	case "track":
