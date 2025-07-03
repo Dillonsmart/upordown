@@ -21,7 +21,6 @@ func Init() {
 }
 
 func createTables() {
-	fmt.Println(os.Getenv("SCHEMA_DIR"))
 	dir, err := os.Open(os.Getenv("SCHEMA_DIR"))
 	if err != nil {
 		fmt.Println("Error opening directory: ", err)
